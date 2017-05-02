@@ -1,0 +1,195 @@
+@font-face {
+	font-family: 'body';
+	src: url('../fonts/gillsans.eot');
+	src: url('../fonts/gillsans.eot?#iefix') format('embedded-opentype'), url('../fonts/gillsans.woff') format('woff'), url('../fonts/gillsans.ttf') format('truetype'), url('../fonts/gillsans.svg#gillsans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bodybold';
+	src: url('../fonts/gillsansbold.eot');
+	src: url('../fonts/gillsansbold.eot?#iefix') format('embedded-opentype'), url('../fonts/gillsansbold.woff') format('woff'), url('../fonts/gillsansbold.ttf') format('truetype'), url('../fonts/gillsansbold.svg#gillsansbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'heading';
+	src: url('../fonts/helveticalight.eot');
+	src: url('../fonts/helveticalight.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticalight.woff') format('woff'), url('../fonts/helveticalight.ttf') format('truetype'), url('../fonts/gillsanslight.svg#gillsanslight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'logotype';
+	src: url('../fonts/pillpopper.eot');
+	src: url('../fonts/pillpopper.eot?#iefix') format('embedded-opentype'), url('../fonts/pillpopper.woff') format('woff'), url('../fonts/pillpopper.ttf') format('truetype'), url('../fonts/pillpopper.svg#pillpopper') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+html, body{
+	font-family: "body", "arial", "verdana", "sans-serif";
+	background-image: url(../img/bghero.jpg);
+	color: #fff;
+}
+
+body > * {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "heading", "arial", "verdana", "sans-serif";
+}
+
+
+/* To fix height of parent with floating elements*/
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+} 
+
+/* Only if parent has a height (or a width or both)and a position relative:  Use transform: translateY(-50%); to center two elements vertically. */
+.vert-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+} 
+
+header {
+	background-color: #000;
+	padding: 15px;
+	border-bottom: 10px double #C0C;
+	width: auto;
+}
+
+#logo {
+	color: #ef0bef;
+	float: left;
+	font-family: "logotype", "Arial", "sans-serif";
+	font-size: 30px;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 20px rgba(255, 255, 255, 1); 
+}
+
+nav {
+	float: right;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	float: left;
+	display: inline-block;
+	margin-right: 13px;
+}
+nav ul li ul {
+	display: none;
+}
+nav ul li a {
+	display: inline-block;
+	padding: 8px 16px;
+	color: #fff;
+	border-radius: 20px;
+	background: linear-gradient(#C0C, #505);
+	text-decoration: none;
+} 
+nav ul li a.fa {
+	padding: 8px;
+	border-radius: 100px;
+	min-width: 20px;
+}
+
+#hero {
+	height: 483px;
+} 
+
+#hero p {
+	margin-bottom: 13px;
+}
+
+
+#hero .btn,
+.ctaeffect .btn {
+	height: 50px;
+	width: 150px;
+	padding: 5px 16px;
+	border-radius: 20px;
+	background-color: #006983;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	font-family: "body";
+	box-sizing: border-box;
+}
+
+h2 {
+	padding: 40px;
+	font-size: 42px;
+	letter-spacing: 2px;
+}
+
+.cta  {
+	height: 238px;
+	background-color: rgba(158, 115, 149, 0.25);
+}
+
+/* -----------BENEFITS SECTION------------ */
+
+#benefits {
+/*	clear: both;*/
+/*	height: 523px;*/
+	padding: 61.5px;
+/*	width: auto;*/
+	background: linear-gradient(#4c0648, #753c56);
+}
+
+#benefits > div {
+	top: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	margin-right: 21px;
+	padding: 10px;
+	background-color: #505;
+    box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, .5);
+}
+
+#benefits > div:last-child {
+	margin-right: 0;
+}
+
+#benefits > div > div > svg {
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+}
+
+#benefits > div > div > p {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 28px;
+}
+
+svg path {
+	fill: #fff;
+}
